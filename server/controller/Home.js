@@ -11,7 +11,7 @@ const Add = async (req, res, next) => {
     })
     try {
         await crud.save()
-        res.status(201).json({ message: "title added successfully", status: 1 })
+        res.status(200).json({ message: "title added successfully", status: 1 })
     } catch (error) {
         // console.log(error);
         return next(
