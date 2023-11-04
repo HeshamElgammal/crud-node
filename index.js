@@ -40,7 +40,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.urlencoded({ extended: true }))
 // for parsing multipart/form-data
-app.use(upload.array());
+// app.use(upload.array());
 app.use(express.static('public'));
 // app.use("/uploads/images", express.static(path.join("uploads", "images")));
 
